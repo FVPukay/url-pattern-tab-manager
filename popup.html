@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Grouper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h1>Tab Manager</h1>
+            <button id="feedbackButton">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                    width="20px" fill="#000">
+                    <path d="M479.79-360q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71
+                    t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71
+                    t25.5 10.5ZM444-480h72v-264h-72v264ZM96-96v-696q0-29.7 21.15-50.85
+                    Q138.3-864 168-864h624q29.7 0 50.85 21.15Q864-821.7 864-792v480
+                    q0 29.7-21.15 50.85Q821.7-240 792-240H240L96-96Zm114-216h582
+                    v-480H168v522l42-42Zm-42 0v-480 480Z"/>
+                </svg>
+            </button>
+        </div>
+        <form id="addPatternForm">
+            <input type="text" id="patternInput" size="30" placeholder="google.com, google.com/search" required>
+            <button type="submit">Add Pattern</button>
+        </form>
+        <div class="pattern-list-container">
+            <h2>Saved Patterns</h2>
+            <ul id="patternsList"></ul>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
